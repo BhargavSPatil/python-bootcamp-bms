@@ -1,0 +1,10 @@
+import math
+l = float(input("Enter the length of tromboloid: "))
+b = float(input("Enter the breadth of tromboloid: "))
+h = float(input("Enter the height of tromboloid: "))
+k = (l**2 + b**2 + h**2)
+vol_tromb = ((b**2)*(h**2))/math.sqrt(k)
+print("The volume of tromboloid is %.3f" %(vol_tromb))
+rad_cube = (3*vol_tromb)/(4*math.pi)
+rad_sphere = (rad_cube)**(1/3)
+print("The radius of the sphere having the same volume as of the given tromboloid is %.3f" %(rad_sphere))
