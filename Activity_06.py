@@ -1,0 +1,9 @@
+org_list = list(map(int, input("Enter any 5 numbers in a single line: ").split()))
+sliced_list = org_list[0:3]
+print("Sliced list = ", sliced_list)
+org_list[0] = 0
+org_list[4] = 0
+sliced_list[0] = 0
+sliced_list[2] = 0
+print("Replaced list-1 = ", org_list)
+print("Replaced list-2 = ", sliced_list)
