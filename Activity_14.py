@@ -1,10 +1,11 @@
+import math
 def inputs():
     num = int(input("Enter a number: "))
     return num
 
 def prime_num(num):
     flag = 0    
-    for i in range(2, int((num/2)+1)):
+    for i in range(2, int(math.sqrt(num)+1)):
         if(num%i == 0):
             flag = 1
             break
